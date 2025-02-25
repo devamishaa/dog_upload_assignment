@@ -45,7 +45,6 @@ The API will be available at http://localhost:3000/api
 1. Clone the repository:
    ```
    git clone <repository-url>
-   cd dog-pics-api
    ```
 
 2. Build the Docker image:
@@ -58,7 +57,7 @@ The API will be available at http://localhost:3000/api
    docker run -p 3000:3000 dog-pics-api
    ```
 
-The API will be available at http://localhost:3000/api
+The API will be available at http://localhost:3000/api-docs/
 
 ## Running Tests
 
@@ -66,27 +65,10 @@ The API will be available at http://localhost:3000/api
 npm test
 ```
 
-## API Documentation
-
-See the [API Documentation](API_DOCUMENTATION.md) for detailed information about the available endpoints and their usage.
-
-## Project Structure
-
-```
-dog-pics-api/
-├── app.js           # Main application file
-├── package.json     # Project dependencies
-├── Dockerfile       # Docker configuration
-├── uploads/         # Directory for uploaded images
-├── tests/           # Test files
-│   ├── api.test.js  # API tests
-│   └── test-files/  # Test image files
-└── API_DOCUMENTATION.md  # API documentation
-```
 
 ## Implementation Details
 
-- **Storage:** Images are stored on the local filesystem in the uploads/ directory.
+- **Storage:** Images are stored on the local filesystem in the uploadedImages/ directory.
 - **Compression:** Using Sharp library to resize and compress images.
 - **Unique IDs:** Using UUID v4 for generating unique identifiers for each image.
 - **In-memory Database:** Currently using an in-memory array to store image metadata. For production, this should be replaced with a proper database.
