@@ -80,7 +80,7 @@ router.get('/', dogController.getAllDogs);
  *       401:
  *         description: Unauthorized
  */
-router.get('/:id', auth, dogController.getDogById);
+router.get('/:id', dogController.getDogById);
 
 /**
  * @swagger
