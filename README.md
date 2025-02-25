@@ -25,7 +25,6 @@ A RESTful API for uploading and managing dog pictures with image compression.
 1. Clone the repository:
    ```
    git clone <repository-url>
-   cd dog-pics-api
    ```
 
 2. Install dependencies:
@@ -45,6 +44,7 @@ The API will be available at http://localhost:3000/api
 1. Clone the repository:
    ```
    git clone <repository-url>
+   cd dog-pics-api
    ```
 
 2. Build the Docker image:
