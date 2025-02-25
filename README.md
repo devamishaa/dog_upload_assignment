@@ -37,7 +37,7 @@ A RESTful API for uploading and managing dog pictures with image compression.
    npm start
    ```
 
-The API will be available at http://localhost:3000/api
+The API will be available at http://localhost:3000/api/dogs
 
 ### Option 2: Docker Installation
 
